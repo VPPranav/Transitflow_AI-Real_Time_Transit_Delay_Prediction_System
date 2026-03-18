@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 220 25% 7%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 7%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 7%;
+    --primary: 190 100% 40%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 220 15% 90%;
+    --secondary-foreground: 220 25% 7%;
+    --muted: 220 15% 90%;
+    --muted-foreground: 215 15% 45%;
+    --accent: 190 100% 40%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+    --success: 142 76% 36%;
+    --success-foreground: 210 40% 98%;
+    --warning: 45 93% 47%;
+    --warning-foreground: 220 25% 7%;
+    --border: 220 15% 85%;
+    --input: 220 15% 85%;
+    --ring: 190 100% 40%;
+    --radius: 0.5rem;
+    --font-display: 'Orbitron', sans-serif;
+    --font-body: 'Inter', sans-serif;
+  }
+  .dark {
+    --background: 220 25% 7%;
+    --foreground: 210 20% 90%;
+    --card: 220 20% 12%;
+    --card-foreground: 210 20% 90%;
+    --popover: 220 20% 12%;
+    --popover-foreground: 210 20% 90%;
+    --primary: 190 100% 50%;
+    --primary-foreground: 220 25% 7%;
+    --secondary: 220 20% 16%;
+    --secondary-foreground: 210 20% 90%;
+    --muted: 220 15% 18%;
+    --muted-foreground: 215 15% 55%;
+    --accent: 190 100% 50%;
+    --accent-foreground: 220 25% 7%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+    --success: 142 76% 36%;
+    --success-foreground: 210 40% 98%;
+    --warning: 45 93% 47%;
+    --warning-foreground: 220 25% 7%;
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 190 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px hsl(190 100% 50% / 0.6), 0 0 40px hsl(190 100% 50% / 0.3);
+  }
+  .border-glow {
+    box-shadow: 0 0 15px hsl(190 100% 50% / 0.15), inset 0 0 15px hsl(190 100% 50% / 0.05);
+  }
+  .glass {
+    background: hsl(var(--card) / 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid hsl(var(--border) / 0.5);
+  }
+}
