@@ -216,7 +216,6 @@ ai_transit_delay_detection/
 ├── notebook/
 │   └── model_training.ipynb      # Full training pipeline notebook
 │
-├── COMPLETE PROJECT PIPELINE.docx
 └── README.md
 ```
 
@@ -664,7 +663,6 @@ This project is licensed under the **MIT License** — see the `LICENSE` file fo
 
 - Create an issue in the repository for bugs or feature requests
 - Review the interactive API documentation at `http://localhost:8000/docs`
-- See `COMPLETE PROJECT PIPELINE.docx` for full end-to-end architecture documentation
 
 ---
 
