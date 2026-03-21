@@ -1,0 +1,10 @@
+{
+  "name": "transitflow-ai",
+  "version": "1.0.0",
+  "description": "Transitflow AI - Real Time Transit Delay Prediction System",
+  "scripts": {
+    "start": "npx concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+    "start:backend": "cd backend && python app.py",
+    "start:frontend": "npm run dev --prefix frontend"
+  }
+}

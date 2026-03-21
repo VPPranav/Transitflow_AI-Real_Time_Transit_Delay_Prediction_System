@@ -273,7 +273,7 @@ wheels/
 
 # Dataset files
 *.csv
-*.json
+dataset/*.json
 *.xml
 *.yaml
 *.yml
@@ -292,3 +292,4 @@ wheels/
 *.xls
 *.pptx
 *.ppt
+.vercel

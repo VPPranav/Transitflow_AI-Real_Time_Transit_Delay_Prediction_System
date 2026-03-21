@@ -280,6 +280,22 @@ FEATURES_PATH=./features.pkl
 
 ## ▶ Running the Application
 
+### Both Services Together (Recommended)
+
+You can run both the frontend and backend with a single command from the project root:
+
+**Method 1 (Windows users):**
+Run or double-click `start.bat`:
+```bash
+.\start.bat
+```
+
+**Method 2 (Using npm):**
+```bash
+npm install
+npm start
+```
+
 ### Backend
 
 ```bash
