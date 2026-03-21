@@ -1,7 +1,8 @@
 {
   "name": "transitflow-ai",
   "version": 2,
-  "buildCommand": "cd frontend && npm install && npm run build",
+  "buildCommand": "npm run vercel-build",
+  "devCommand": "npm start",
   "outputDirectory": "frontend/dist",
   "framework": "vite",
   "rewrites": [
